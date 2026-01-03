@@ -66,8 +66,7 @@
     position: absolute;
     padding: 16px;
     width: 100%;
-    top: 30vh;
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    top: 60%;
   }
   .invoicee-mb-nav-container .mb-nav-menu .nav-links li {
     list-style: none;
