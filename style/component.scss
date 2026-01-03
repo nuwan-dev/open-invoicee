@@ -1,0 +1,30 @@
+@import 'var';
+
+.btn {
+    padding: 6px 12px;
+    font-size: $font-size-base;
+    background: $text-color-primary;
+    color: $text-color-light;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn-light {
+    background: $text-color-light;
+    border: 1px solid $border-color;
+    color: $text-color-primary;
+}
+
+.btn-hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-effect {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

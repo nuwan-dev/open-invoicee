@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+// fonts
+$font-family-primary: "Inter", sans-serif;
+$font-family-secondary: "Erica One", sans-serif;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-h1: 2.5rem;
+
+$text-case-upper: uppercase;
+$text-case-lower: lowercase;
+$text-case-cap:   capitalize;
+$text-case-none:  none;
+
+$text-color-primary: #000;
+$text-color-secondary: #666;
+$text-color-light: #fff;
+
+$border-color: hsla(0,0%,92%,1);
+
+$container-max-width: 1280px;
+$container-narrow:    800px;    // Great for blog posts or reading text
+$container-wide:      1440px;

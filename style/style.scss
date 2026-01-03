@@ -1,0 +1,81 @@
+@import 'var';
+@import 'component';
+@import 'res';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font-family-primary;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// top nav container
+.invoicee-top-nav-container {
+    width: 90%;
+    border: 1px solid $border-color;
+    margin: auto;
+    padding: 16px;
+    margin-top: 16px;
+    position: sticky;
+    border-radius: 16px;
+    max-width: $container-max-width;
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+
+        .nav-left {
+            display: inherit;
+            align-items: inherit;
+            gap: 24px;
+
+            .open-invoicee-logo {
+                height: 40px;
+                cursor: pointer;
+            }
+
+            .nav-links {
+                display: flex;
+                margin-left: 20px;
+                gap: 24px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $text-color-secondary;
+                    }
+                }
+            }
+        }
+
+        .nav-right {
+            display: inherit;
+            gap: 24px;
+
+            a {
+                transition: box-shadow ease-in-out 0.2s;
+
+                &:hover {
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        .mb-menu-btn {
+            display: none;
+        }
+
+        .mb-nav-menu {
+            display: none;
+        }
+    }
+}

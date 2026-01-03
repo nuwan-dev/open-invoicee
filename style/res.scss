@@ -1,0 +1,79 @@
+@import 'var';
+
+
+// mobile 480
+
+@media screen and (max-width: 980px) {
+
+    // top nav container
+    .invoicee-top-nav-container {
+        width: 100% !important;
+        transition: width ease-in-out .2s;
+
+        .top-nav {
+            .nav-left {
+                .open-invoicee-logo {
+                    height: 25px;
+                }
+
+                .nav-links {
+                    display: none;
+                }
+            }
+
+            .nav-right {
+                display: none;
+            }
+
+            .mb-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                cursor: pointer;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .mb-menu-btn::before,
+            .mb-menu-btn::after {
+                content: '';
+                display: block;
+                width: 22px;
+                height: 1.5px;
+                background-color: $text-color-primary;
+                transition: transform .10s;
+            }
+
+            .mb-menu-btn::before {
+                transform: translateY(-4px) rotate(0);
+            }
+
+            .mb-menu-btn-active::before {
+                transform: translateY(1px) rotate(45deg);
+            }
+
+            .mb-menu-btn::after {
+                transform: translateY(4px) rotate(0);
+            }
+
+            .mb-menu-btn-active::after {
+                transform: translateY(0px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invoicee-top-nav-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

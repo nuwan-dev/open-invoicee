@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
+.btn {
+  padding: 6px 12px;
+  font-size: 1rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-light {
+  background: #fff;
+  border: 1px solid hsl(0, 0%, 92%);
+  color: #000;
+}
+
+.btn-hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-effect {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 980px) {
+  .invoicee-top-nav-container {
+    width: 100% !important;
+    transition: width ease-in-out 0.2s;
+  }
+  .invoicee-top-nav-container .top-nav .nav-left .open-invoicee-logo {
+    height: 25px;
+  }
+  .invoicee-top-nav-container .top-nav .nav-left .nav-links {
+    display: none;
+  }
+  .invoicee-top-nav-container .top-nav .nav-right {
+    display: none;
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn::before,
+  .invoicee-top-nav-container .top-nav .mb-menu-btn::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background-color: #000;
+    transition: transform 0.1s;
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn::before {
+    transform: translateY(-4px) rotate(0);
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn-active::before {
+    transform: translateY(1px) rotate(45deg);
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn::after {
+    transform: translateY(4px) rotate(0);
+  }
+  .invoicee-top-nav-container .top-nav .mb-menu-btn-active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .invoicee-top-nav-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.invoicee-top-nav-container {
+  width: 90%;
+  border: 1px solid hsl(0, 0%, 92%);
+  margin: auto;
+  padding: 16px;
+  margin-top: 16px;
+  position: sticky;
+  border-radius: 16px;
+  max-width: 1280px;
+}
+.invoicee-top-nav-container .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.invoicee-top-nav-container .top-nav .nav-left {
+  display: inherit;
+  align-items: inherit;
+  gap: 24px;
+}
+.invoicee-top-nav-container .top-nav .nav-left .open-invoicee-logo {
+  height: 40px;
+  cursor: pointer;
+}
+.invoicee-top-nav-container .top-nav .nav-left .nav-links {
+  display: flex;
+  margin-left: 20px;
+  gap: 24px;
+}
+.invoicee-top-nav-container .top-nav .nav-left .nav-links li {
+  list-style: none;
+}
+.invoicee-top-nav-container .top-nav .nav-left .nav-links li a {
+  text-decoration: none;
+  color: #666;
+}
+.invoicee-top-nav-container .top-nav .nav-right {
+  display: inherit;
+  gap: 24px;
+}
+.invoicee-top-nav-container .top-nav .nav-right a {
+  transition: box-shadow ease-in-out 0.2s;
+}
+.invoicee-top-nav-container .top-nav .nav-right a:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.invoicee-top-nav-container .top-nav .mb-menu-btn {
+  display: none;
+}
+.invoicee-top-nav-container .top-nav .mb-nav-menu {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
