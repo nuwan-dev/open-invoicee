@@ -80,24 +80,38 @@
   .invoicee-top-nav-container .top-nav .mb-menu-btn-active::after {
     transform: translateY(0px) rotate(-45deg);
   }
-  .invoicee-top-nav-container .mb-nav-menu {
+  .invoicee-mb-nav-container {
     display: block;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    width: 100%;
+    background: red;
+    border-radius: 0 !important;
+    left: -100%;
+    opacity: 0;
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
-  .invoicee-top-nav-container .mb-nav-menu .nav-links {
-    display: inherit;
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links {
+    display: flex;
     gap: 20px;
     flex-direction: column;
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    top: 30vh;
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
-  .invoicee-top-nav-container .mb-nav-menu .nav-links li {
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links li {
     list-style: none;
   }
-  .invoicee-top-nav-container .mb-nav-menu .nav-links li a {
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links li a {
     text-decoration: none;
     color: #000;
+  }
+  .mb-nav-active {
+    left: 0;
+    opacity: 1;
   }
 }
 @media screen and (max-width: 480px) {
@@ -171,7 +185,8 @@
 .invoicee-top-nav-container .top-nav .mb-menu-btn {
   display: none;
 }
-.invoicee-top-nav-container .top-nav .mb-nav-menu {
+
+.invoicee-mb-nav-container {
   display: none;
 }
 
