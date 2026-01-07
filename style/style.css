@@ -172,11 +172,16 @@
     text-decoration: none;
     color: #000;
     font-size: 22px;
+    width: 100%;
   }
   .invoicee-mb-nav-container .mb-nav-links .nav-links .nav-right {
     margin-top: 20px;
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .invoicee-mb-nav-container .mb-nav-links .nav-links .nav-right a {
+    text-align: center;
   }
   .invoicee-mb-nav-container .mb-nav-links .nav-links .nav-right a:nth-child(2) {
     color: #fff;

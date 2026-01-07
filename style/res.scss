@@ -125,13 +125,19 @@
                         text-decoration: none;
                         color: $text-color-primary;
                         font-size: 22px;
+                        width: 100%;
                     }
                 }
 
                 .nav-right {
                     margin-top: 20px;
                     display: flex;
-                    gap: 25px;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    a {
+                        text-align: center;
+                    }
 
                     a:nth-child(2) {
                         color: $text-color-light;
