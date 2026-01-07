@@ -33,6 +33,45 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.mb-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mb-menu-btn::before,
+.mb-menu-btn::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background-color: #000;
+  transition: transform 0.1s;
+}
+
+.mb-menu-btn::before {
+  transform: translateY(-4px) rotate(0);
+}
+
+.mb-menu-btn-active::before {
+  transform: translateY(1px) rotate(45deg);
+}
+
+.mb-menu-btn::after {
+  transform: translateY(4px) rotate(0);
+}
+
+.mb-menu-btn-active::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
 @media screen and (max-width: 980px) {
   .invoicee-top-nav-container {
     width: 95% !important;
@@ -87,29 +126,53 @@
     width: 100vw;
     position: absolute;
     border-radius: 0 !important;
-    left: -100%;
+    visibility: hidden;
     opacity: 0;
-    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: #fff;
+    top: 0px;
+    z-index: 9;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links {
+  .invoicee-mb-nav-container .mb-nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 16px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 16px;
+    align-items: center;
+  }
+  .invoicee-mb-nav-container .mb-nav-header .open-invoicee-logo {
+    height: 25px;
+  }
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links div {
     display: flex;
     gap: 20px;
     flex-direction: column;
     position: absolute;
     padding: 16px;
     width: 100%;
-    top: 35%;
+    top: 25%;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links li {
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links div li {
     list-style: none;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links li a {
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links div li a {
     text-decoration: none;
     color: #000;
   }
-  .mb-nav-active {
+}
+@media screen and (max-width: 980px) and (min-width: 480px) {
+  .invoicee-mb-nav-container .mb-nav-menu .nav-links div {
+    flex-direction: row;
+    width: 95%;
+    top: 5%;
+    right: 0;
     left: 0;
-    opacity: 1;
+    margin: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -119,7 +182,16 @@
     right: 0;
     bottom: 16px;
   }
+  .invoicee-mb-nav-container .mb-nav-header {
+    top: 0;
+    bottom: -78.5%;
+  }
 }
+.mb-nav-active {
+  visibility: visible;
+  opacity: 1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -165,6 +237,7 @@
 }
 .invoicee-top-nav-container .top-nav .nav-left .nav-links li {
   list-style: none;
+  position: relative;
 }
 .invoicee-top-nav-container .top-nav .nav-left .nav-links li a {
   text-decoration: none;

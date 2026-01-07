@@ -49,6 +49,22 @@
 
                 li {
                     list-style: none;
+                    position: relative;
+
+                    // &::after {
+                    //     content: '';
+                    //     display: block;
+                    //     width: 0%;
+                    //     height: 2px;
+                    //     background: $main-color;
+                    //     position: absolute;
+                    //     bottom: -5px;
+                    //     transition: width 0.3s ease-in-out;
+                    // }
+
+                    // &:hover::after {
+                    //     width: 100%;
+                    // }
 
                     a {
                         text-decoration: none;

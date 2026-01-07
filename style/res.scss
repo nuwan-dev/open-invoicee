@@ -72,24 +72,40 @@
         height: 100vh;
         width: 100vw;
         position: absolute;
-        // background: red;
         border-radius: 0 !important;
-        left: -100%;
+        visibility: hidden;
         opacity: 0;
-        transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        background-color: $text-color-light;
+        top: 0px;
+        z-index: 9;
+
+        .mb-nav-header {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+            padding: 16px;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 16px;
+            align-items: center;
+
+            .open-invoicee-logo {
+                height: 25px;
+            }
+        }
 
         .mb-nav-menu {
-            .nav-links {
+            .nav-links div {
                 display: flex;
                 gap: 20px;
                 flex-direction: column;
                 position: absolute;
                 padding: 16px;
                 width: 100%;
-                top: 35%;
-                // left: -100%;
-                // opacity: 0;
-                // transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                top: 25%;
 
                 li {
                     list-style: none;
@@ -100,13 +116,21 @@
                     }
                 }
             }
+
+            @media screen and (min-width: 480px) {
+                .nav-links div {
+                    flex-direction: row;
+                    width: 95%;
+                    top: 5%;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                }
+            }
         }
     }
 
-    .mb-nav-active {
-        left: 0;
-        opacity: 1;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -116,4 +140,18 @@
         right: 0;
         bottom: 16px;
     }
+
+    .invoicee-mb-nav-container {
+        .mb-nav-header {
+            top: 0;
+            bottom: -78.5%;
+
+
+        }
+    }
+}
+
+.mb-nav-active {
+    visibility: visible;
+    opacity: 1;
 }

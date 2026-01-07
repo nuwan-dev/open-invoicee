@@ -13,15 +13,17 @@ $font-size-h1: 2.5rem;
 
 $text-case-upper: uppercase;
 $text-case-lower: lowercase;
-$text-case-cap:   capitalize;
-$text-case-none:  none;
+$text-case-cap: capitalize;
+$text-case-none: none;
 
 $text-color-primary: #000;
 $text-color-secondary: #666;
 $text-color-light: #fff;
+$main-color: #FD4714;
+$secondy-color: rgb(253 71 20 / 24%);
 
-$border-color: hsla(0,0%,92%,1);
+$border-color: hsla(0, 0%, 92%, 1);
 
 $container-max-width: 1280px;
-$container-narrow:    800px;    // Great for blog posts or reading text
-$container-wide:      1440px;
+$container-narrow: 800px; // Great for blog posts or reading text
+$container-wide: 1440px;
