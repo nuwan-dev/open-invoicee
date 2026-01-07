@@ -143,10 +143,9 @@
 
     .invoicee-mb-nav-container {
         .mb-nav-header {
-            // top: 0;
-            // bottom: -78.5%;
-            top: 86.6%;
-            bottom: 0;
+            position: fixed;
+            height: 100%;
+            bottom: -75.1%;
         }
     }
 }
