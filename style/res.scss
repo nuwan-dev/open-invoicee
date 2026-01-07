@@ -145,7 +145,8 @@
         .mb-nav-header {
             position: fixed;
             height: 100%;
-            bottom: -84.6%;
+            // bottom: -84.6%;
+            top: 0;
         }
     }
 }
