@@ -73,7 +73,13 @@
     top: 16px;
     align-items: center;
   }
-  .invoicee-mb-nav-container .mb-nav-header .open-invoicee-logo {
+  .invoicee-mb-nav-container .mb-nav-header div {
+    display: inherit;
+    align-items: center;
+    justify-content: inherit;
+    width: 100%;
+  }
+  .invoicee-mb-nav-container .mb-nav-header div .open-invoicee-logo {
     height: 25px;
   }
   .invoicee-mb-nav-container .mb-nav-menu .nav-links div {

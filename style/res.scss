@@ -92,9 +92,18 @@
             top: 16px;
             align-items: center;
 
-            .open-invoicee-logo {
-                height: 25px;
+            div {
+                display: inherit;
+                align-items: center;
+                justify-content: inherit;
+                width: 100%;
+
+                .open-invoicee-logo {
+                    height: 25px;
+                }
             }
+
+
         }
 
         .mb-nav-menu {
