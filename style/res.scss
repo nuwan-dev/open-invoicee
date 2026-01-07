@@ -106,15 +106,17 @@
 
         }
 
-        .mb-nav-menu {
-            .nav-links div {
+        .mb-nav-links {
+            .nav-links {
                 display: flex;
                 gap: 20px;
                 flex-direction: column;
                 position: absolute;
                 padding: 16px;
                 width: 100%;
-                top: 25%;
+                top: 10%;
+                justify-content: flex-start;
+                padding: 32px;
 
                 li {
                     list-style: none;
@@ -122,6 +124,7 @@
                     a {
                         text-decoration: none;
                         color: $text-color-primary;
+                        font-size: 22px;
                     }
                 }
             }
@@ -163,6 +166,13 @@
                 align-items: center;
                 justify-content: inherit;
                 width: 100%;
+            }
+        }
+
+        .mb-nav-links {
+            .nav-links {
+                justify-content: flex-end;
+                bottom: 15%;
             }
         }
     }

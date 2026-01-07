@@ -82,25 +82,28 @@
   .invoicee-mb-nav-container .mb-nav-header div .open-invoicee-logo {
     height: 25px;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links div {
+  .invoicee-mb-nav-container .mb-nav-links .nav-links {
     display: flex;
     gap: 20px;
     flex-direction: column;
     position: absolute;
     padding: 16px;
     width: 100%;
-    top: 25%;
+    top: 10%;
+    justify-content: flex-start;
+    padding: 32px;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links div li {
+  .invoicee-mb-nav-container .mb-nav-links .nav-links li {
     list-style: none;
   }
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links div li a {
+  .invoicee-mb-nav-container .mb-nav-links .nav-links li a {
     text-decoration: none;
     color: #000;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 980px) and (min-width: 480px) {
-  .invoicee-mb-nav-container .mb-nav-menu .nav-links div {
+  .invoicee-mb-nav-container .mb-nav-links .nav-links div {
     flex-direction: row;
     width: 95%;
     top: 5%;
@@ -128,6 +131,10 @@
     align-items: center;
     justify-content: inherit;
     width: 100%;
+  }
+  .invoicee-mb-nav-container .mb-nav-links .nav-links {
+    justify-content: flex-end;
+    bottom: 15%;
   }
 }
 .mb-nav-active {
