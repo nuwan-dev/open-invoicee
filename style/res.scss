@@ -145,8 +145,16 @@
         .mb-nav-header {
             position: fixed;
             height: 100%;
-            // bottom: -84.6%;
+            align-items: flex-end;
+            bottom: 33.1px;
             top: 0;
+
+            div {
+                display: inherit;
+                align-items: center;
+                justify-content: inherit;
+                width: 100%;
+            }
         }
     }
 }

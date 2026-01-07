@@ -113,7 +113,15 @@
   .invoicee-mb-nav-container .mb-nav-header {
     position: fixed;
     height: 100%;
+    align-items: flex-end;
+    bottom: 33.1px;
     top: 0;
+  }
+  .invoicee-mb-nav-container .mb-nav-header div {
+    display: inherit;
+    align-items: center;
+    justify-content: inherit;
+    width: 100%;
   }
 }
 .mb-nav-active {
