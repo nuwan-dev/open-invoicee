@@ -91,7 +91,7 @@
     width: 100%;
     top: 10%;
     justify-content: flex-start;
-    padding: 25px;
+    padding: 35px;
   }
   .invoicee-mb-nav-container .mb-nav-links .nav-links li {
     list-style: none;
@@ -100,6 +100,14 @@
     text-decoration: none;
     color: #000;
     font-size: 22px;
+  }
+  .invoicee-mb-nav-container .mb-nav-links .nav-links .nav-right {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+  }
+  .invoicee-mb-nav-container .mb-nav-links .nav-links .nav-right a:nth-child(2) {
+    color: #fff;
   }
 }
 @media screen and (max-width: 980px) and (min-width: 480px) {
@@ -135,6 +143,7 @@
   .invoicee-mb-nav-container .mb-nav-links .nav-links {
     justify-content: flex-end;
     bottom: 15%;
+    padding: 25px;
   }
 }
 .mb-nav-active {

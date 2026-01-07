@@ -116,7 +116,7 @@
                 width: 100%;
                 top: 10%;
                 justify-content: flex-start;
-                padding: 25px;
+                padding: 35px;
 
                 li {
                     list-style: none;
@@ -125,6 +125,16 @@
                         text-decoration: none;
                         color: $text-color-primary;
                         font-size: 22px;
+                    }
+                }
+
+                .nav-right {
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 25px;
+
+                    a:nth-child(2) {
+                        color: $text-color-light;
                     }
                 }
             }
@@ -173,6 +183,7 @@
             .nav-links {
                 justify-content: flex-end;
                 bottom: 15%;
+                padding: 25px;
             }
         }
     }
